@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção D&A</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.jpg" alt="Logo da empresa">
+        </div>
+    </header>
+    <main>
+        <div class="main-page">
+            <h1 class="title-mainpage2">Controle de Recuperação de Peças</h1>
+            <hr>
+            <!-- Formulário para capturar os dados -->
+            <form id="form-excel">
+                <div class="inputs" id="input-container">
+                    <div class="container-data">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" name="data" class="data" required>
+                    </div>
+                    <div class="container-equipamento">
+                        <label for="eqp1">Equipamento</label>
+                        <input type="text" id="eqp1" name="equipamento" class="equipamento">
+                    </div>
+                    <div class="container-qntnovo">
+                        <label for="novo1">Novo</label>
+                        <input type="number" id="novo1" name="novo" class="qntnovo">
+                    </div>
+                    <div class="container-revit">
+                        <label for="revi1">Revitalizado</label>
+                        <input type="number" id="revi1" name="revitalizado" class="revit">
+                    </div>
+                    <div class="container-desc">
+                        <label for="desc1">Descarte</label>
+                        <input type="number" id="desc1" name="descarte" class="desc">
+                    </div>
+                </div>
+
+                <!-- Botões para adicionar e remover campos -->
+                <div class="buttons-add">
+                    <div class="button-remov">
+                        <button type="button" class="remover" id="remove-btn">-</button>
+                    </div>
+                    <div class="button-adc">
+                        <button type="button" class="adicionar" id="add-btn">+</button>
+                    </div>
+                </div>
+
+                <!-- Botão para gerar o arquivo Excel -->
+                <div class="button-submit">
+                    <button type="submit" class="submit" id="generate-excel-btn">Gerar Excel</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Scripts necessários -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/excel.js"></script>
+</body>
+</html>
