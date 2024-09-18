@@ -30,7 +30,7 @@ window.onload = function() {
             </div>
             <div class="container-desc">
                 <label for="desc">Descarte</label>
-                <input type="number" id="desc${count}" class="desc">
+                <input type="text" id="desc${count}" class="desc">
             </div>
         `;
 
